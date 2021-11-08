@@ -1,0 +1,12 @@
+@import '../../styles/common.scss';
+@import '../../styles/mixins.scss';
+
+.Products {
+  width: $pageWidth;
+  margin: 0 auto;
+  font-size: 50px;
+
+  .mainInfoWrapper {
+    @include flex(row, flex-start, space-between);
+  }
+}

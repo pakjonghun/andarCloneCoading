@@ -1,0 +1,71 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/common.scss';
+
+.Login {
+  @include flex();
+  padding-top: 100px;
+
+  .title {
+    @include title();
+    margin-bottom: 35px;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+
+  .loginWrapper {
+    @include flex($flexDirection: column);
+  }
+
+  form {
+    width: 100%;
+    @include flex($flexDirection: column);
+
+    .loginInput {
+      margin-bottom: 15px;
+      @include input();
+
+      &:focus {
+        border: 1px solid black;
+      }
+
+      &::placeholder {
+        color: $lightGray;
+      }
+    }
+
+    .loginButton {
+      @include button($bgColor: $black, $color: white);
+      width: 100%;
+      margin-bottom: 29px;
+      font-size: 18px;
+      text-align: center;
+      font-weight: 800;
+    }
+  }
+
+  .smallMsgs {
+    @include flex($flexDirection: column, $align: flex-start);
+    color: $middleGray;
+
+    small {
+      margin-bottom: 10px;
+      font-size: $smallFontSize;
+    }
+
+    .msgContainer {
+      @include flex();
+
+      .icon {
+        margin-top: 1px;
+        align-self: flex-start;
+      }
+    }
+
+    .longSmallMsg {
+      width: 380px;
+      line-height: 140%;
+    }
+  }
+}

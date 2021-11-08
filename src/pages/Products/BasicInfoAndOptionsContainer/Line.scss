@@ -1,0 +1,12 @@
+.Line {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+
+  .title {
+    margin-right: 58px;
+    width: 50px;
+    font-size: 14px;
+    color: #777;
+  }
+}

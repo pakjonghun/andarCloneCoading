@@ -1,0 +1,70 @@
+.SelectedItem {
+  position: relative;
+  padding: 12px 24px;
+  border-right: 1px solid #e4e4e4;
+  border-left: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #f9f9f9;
+  color: #555;
+  font-size: 12px;
+
+  &:first-child {
+    border: 1px solid #e4e4e4;
+  }
+
+  .productTitle {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .colorAndSize {
+    padding: 8px 0 12px;
+  }
+
+  .bottomLine {
+    display: flex;
+    justify-content: space-between;
+
+    .amountWrapper {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #dddddd;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #dddddd;
+        border-left: 1px solid #dddddd;
+        user-select: none;
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-end;
+      font-size: 16px;
+    }
+  }
+
+  .deleteButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+}

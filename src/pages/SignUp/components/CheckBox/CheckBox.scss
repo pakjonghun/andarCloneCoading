@@ -1,0 +1,51 @@
+@import '../../../../styles//common.scss';
+.CheckBox {
+  input[type='checkBox']:checked,
+  input[type='checkBox']:not(:checked) {
+    display: none;
+  }
+
+  input[type='checkBox']:checked + label,
+  input[type='checkBox']:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    line-height: 19px;
+    padding: 0 28px 0;
+    cursor: pointer;
+  }
+
+  input[type='checkBox']:checked + label::before,
+  input[type='checkBox']:not(:checked) + label::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 14px;
+    border: 1px solid $lightGray;
+    content: '';
+  }
+
+  input[type='checkBox']:checked + label::after,
+  input[type='checkBox']:not(:checked) + label::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 14px;
+    padding-bottom: 4.1px;
+    background-color: $black;
+    text-align: center;
+    border: 1px solid $black;
+    color: white;
+    font-size: $smallFontSize;
+    content: '✔︎';
+  }
+
+  input[type='checkBox']:not(:checked) + label:after {
+    opacity: 0;
+  }
+
+  input[type='checkBox']:checked + label:after {
+    opacity: 1;
+  }
+}
