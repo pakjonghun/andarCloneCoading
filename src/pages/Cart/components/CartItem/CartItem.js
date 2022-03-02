@@ -31,8 +31,8 @@ class CartItem extends React.Component {
           {Array.isArray(options) &&
             options.map(({ size, color, id }) => (
               <React.Fragment key={id}>
-                <span>{size}</span>
-                <span>{color}</span>
+                <span>SIZE : {size}</span>
+                <span>COLOR : {color}</span>
                 <Link to={ROUTES.CART_OPTION_CHANGE(id)}>옵션변경</Link>
               </React.Fragment>
             ))}
