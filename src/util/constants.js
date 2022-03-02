@@ -3,6 +3,11 @@ export const ERRORS = {
   400: '잘못된 값을 입력되었습니다.',
 };
 
+export const MOCKROUTES = {
+  CART: '/data/cart.json',
+  CART_RECOMMENT: '/data/cartRecomment.json',
+};
+
 export const ROUTES = {
   CART: 'http://localhost:8000/carts',
   CART_OPTION_CHANGE: id => `/product/${id}`,

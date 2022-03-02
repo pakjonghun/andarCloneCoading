@@ -1,5 +1,5 @@
 import React from 'react';
-import { faLiraSign } from '@fortawesome/free-solid-svg-icons';
+import { faEraser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import BasicCheckBox from '../BasicCheckBox/BasicCheckBox';
@@ -42,7 +42,7 @@ class CartItem extends React.Component {
         <FontAwesomeIcon
           onClick={() => deleteCartById(id)}
           className="icon"
-          icon={faLiraSign}
+          icon={faEraser}
         />
       </li>
     );

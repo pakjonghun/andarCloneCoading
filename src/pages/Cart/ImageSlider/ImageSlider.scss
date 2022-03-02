@@ -16,14 +16,19 @@
     font-size: 29px;
     z-index: 1;
     transform: translateY(-12.5px);
+    cursor: pointer;
   }
 
   .leftSliderBtn {
-    left: 3px;
+    color: gray;
+    font-weight: 900;
+    left: -7px;
   }
 
   .rightSliderBtn {
-    right: 3px;
+    color: gray;
+    font-weight: 900;
+    right: -7px;
   }
 
   .imageSlider {

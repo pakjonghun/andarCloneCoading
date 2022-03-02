@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageSlideItem from '../components/ImageSlideItem/ImageSlideItem';
 import { failAlert, getFetch } from '../../../util/fetch';
-import { BTNAME, ROUTES } from '../../../util/constants';
+import { BTNAME, MOCKROUTES, ROUTES } from '../../../util/constants';
 import Button from '../../../components/Button/Button';
 import './ImageSlider.scss';
 
@@ -28,7 +28,7 @@ class ImageSlider extends React.Component {
   componentDidMount = async () => {
     const actionFunc = this.fillRecommendState;
     const failFunc = failAlert;
-    await getFetch(ROUTES.CART_RECOMMENT, { actionFunc, failFunc });
+    await getFetch(MOCKROUTES.CART_RECOMMENT, { actionFunc, failFunc });
   };
 
   fillRecommendState = cartRecomment => {

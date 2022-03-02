@@ -20,7 +20,8 @@ class ProductList extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({ productList: res.products });
-      });
+      })
+      .catch(err => console.log(err));
   }
 
   componentDidUpdate(prevProps) {

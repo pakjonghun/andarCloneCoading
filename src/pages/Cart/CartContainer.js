@@ -1,6 +1,6 @@
 import React from 'react';
 import CartPresenter from './CartPresenter';
-import { BTNAME, ROUTES } from '../../util/constants';
+import { BTNAME, MOCKROUTES, ROUTES } from '../../util/constants';
 import { failAlert, getFetch } from '../../util/fetch';
 
 class CartContainer extends React.Component {
@@ -13,7 +13,7 @@ class CartContainer extends React.Component {
     };
     const failFunc = failAlert;
 
-    await getFetch(ROUTES.CART, { actionFunc, failFunc });
+    await getFetch(MOCKROUTES.CART, { actionFunc, failFunc });
   };
 
   fillRecommendState = cartRecomment => {
